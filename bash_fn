@@ -34,7 +34,13 @@ function extract {
 fi
 }
 
-mcd () {
+function mcd () {
   mkdir -p $1
   cd $1
 }
+
+function newpass()
+{
+  cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w ${1:-32} | head -n 1
+}
+
