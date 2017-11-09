@@ -30,12 +30,15 @@ alias ln="ln -i"
 alias root="sudo su"
 alias redo="sudo $(history -p !!)"
 
+# find helpers
+alias fhere="find . -name "
+
 # file size human readable
 alias df="dh -h"
 
 # process listing
 alias ps="ps -auxf"
-alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
+alias psg="ps | grep -v grep | grep -i -e VSZ -e"
 
 # power and logot ease
 alias off="sudo poweroff"
@@ -43,5 +46,4 @@ alias bye="exit"
 
 # useful
 alias c="clear"
-alias newpass="head -3 /dev/urandom | tr -cd '[:alnum:]' | cut -c -14"  # need to update this for variable length and special chars
 alias recall="history | grep "
