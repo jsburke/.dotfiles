@@ -18,7 +18,7 @@ alias back="cd -"
 
 # ls aliases
 alias ll="ls -lah"
-alias l.="ls -d .!(|.)"  # show only hidden files
+alias l.="ls -ad .*"  # show only hidden files
 
 # file manip protections
 alias rm="rm -I --preserve-root"
