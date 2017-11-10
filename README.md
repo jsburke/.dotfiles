@@ -10,8 +10,12 @@ This file is meant to be unique to a device.  Want some things in Cygwin, dedica
 After cloning this repo, you should only have to do the following
 
 ```bash
-./update.sh
+./bash_down.sh
 refresh
 ```
 
-Then the files in here will copy into your bash settings and
+Then the files in here will copy into your bash settings.  If you change one or more of those files on your machine and want to push them back up, do the following:
+
+```bash
+./bash_up.sh
+```
