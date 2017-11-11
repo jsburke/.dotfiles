@@ -11,10 +11,6 @@ HISTCONTROL=ignoreboth
 # append history
 shopt -s histappend
 
-# for setting history length
-HISTSIZE=1000
-HISTFILESIZE=2000
-
 # update window params after commands, resize text
 shopt -s checkwinsize
 
