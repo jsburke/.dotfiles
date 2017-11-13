@@ -17,3 +17,7 @@ shopt -s checkwinsize
 # set up bash prompts
 export PS1='\[\e[92m\]\u@\h:\[\e[m\]\[\e[96m\]\w\$\[\e[m\] '
 export PS2='continue -->'
+
+# set up stuff for the bash_setup project
+# change this path for easy updates
+export BASH_SETUP=~/bash_setup
