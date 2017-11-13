@@ -1,10 +1,10 @@
 #!/bin/bash
 
-rm -f bashrc
-rm -f bash_alias
-rm -f bash_fn
+rm -f $BASH_SETUP/bashrc
+rm -f $BASH_SETUP/bash_alias
+rm -f $BASH_SETUP/bash_fn
 # not deleting bash_local since it will vary by machine
 
-cp ~/.bashrc bashrc
-cp ~/.bash_alias bash_alias
-cp ~/.bash_fn bash_fn
+cp ~/.bashrc       $BASH_SETUP/bashrc
+cp ~/.bash_alias   $BASH_SETUP/bash_alias
+cp ~/.bash_fn      $BASH_SETUP/bash_fn
