@@ -8,3 +8,6 @@ rm -f ~/.bash_fn
 cp $BASH_SETUP/bashrc       ~/.bashrc
 cp $BASH_SETUP/bash_alias   ~/.bash_alias
 cp $BASH_SETUP/bash_fn      ~/.bash_fn
+
+# open Pandora's box
+source ~/.bashrc
