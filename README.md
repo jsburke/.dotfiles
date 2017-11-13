@@ -7,15 +7,12 @@ This file is meant to be unique to a device.  Want some things in Cygwin, dedica
 
 ## How to Utilize
 
-After cloning this repo, you should only have to do the following
+Setting up the repo and using it for the first time is easy, just type the following
 
-```bash
+```sh
+git clone https://github.com/jsburke/bash_setup.git
+cd  bash_setup
 ./bash_down.sh
-refresh
 ```
 
-Then the files in here will copy into your bash settings.  If you change one or more of those files on your machine and want to push them back up, do the following:
-
-```bash
-./bash_up.sh
-```
+And all the settings are good to go!  From that point on updates are easy.  If you update your own .bashrc or .bash_alias (not in the repo) you can update the repo by invoking `bashup` and you can push any changes you make or pull into the repo by invoking `bashdown`, both are aliased.
