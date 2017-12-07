@@ -21,6 +21,7 @@ alias back="cd -"
 
 # ls aliases
 alias ll="ls -lah"
+alias l="ll"
 alias l.="ls -ad .*"  # show only hidden files
 
 # file manip protections
