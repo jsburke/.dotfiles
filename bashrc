@@ -9,7 +9,8 @@ source ~/.bash_local
 HISTCONTROL=ignoreboth
 
 # append history
-shopt -s histappend
+set -o history
+set -o histexpand
 
 # update window params after commands, resize text
 shopt -s checkwinsize
