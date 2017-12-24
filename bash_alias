@@ -35,7 +35,6 @@ alias rmswp="rm .*swp .*swo"  # remove swap files
 
 # root access
 alias root="sudo su"
-alias redo="sudo $(history -p !!)"
 
 # find helpers
 alias fhere="find . -name "
