@@ -45,6 +45,7 @@ alias df="dh -h"
 # process listing
 alias ps="ps -auxf"
 alias psg="ps | grep -v grep | grep -i -e VSZ -e"
+alias psme="psg $USER" # userful for when you ssh to a machine with this set up
 
 # power and logot ease
 alias off="sudo poweroff"
