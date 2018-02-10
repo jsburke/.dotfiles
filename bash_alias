@@ -32,10 +32,10 @@ alias cp="cp -i"
 alias ln="ln -i"
 
 # remove common side effect files
-alias rmswp="rm .*swp .*swo"  # remove swap files
+alias rmswp="rm .*sw? "  # remove swap files
 
 # root access
-alias root="sudo su"
+alias root="su"
 
 # find helpers
 alias fhere="find . -name "
