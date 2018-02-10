@@ -50,6 +50,7 @@ alias psme="psg $USER" # userful for when you ssh to a machine with this set up
 
 # power and logot ease
 alias off="sudo poweroff"
+alias reboot="sudo reboot"
 alias bye="exit"
 
 # useful
