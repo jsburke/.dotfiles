@@ -6,7 +6,6 @@ alias bash_fn="vim ~/.bash_fn; refresh"
 alias bash_local="vim ~/.bash_local; refresh"
 # these ones are bash_setup project specific
 alias bashup="$BASH_SETUP/bash_up.sh"
-alias bashdown="$BASH_SETUP/bash_down.sh"
 
 # colors for ls and grep
 alias ls="ls --color=auto"
