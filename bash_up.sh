@@ -15,4 +15,4 @@ cp ~/.bash_fn      $BASH_SETUP/bash_fn
 
 cp ~/.ctags        $BASH_SETUP/ctags
 cp ~/.vimrc        $BASH_SETUP/vimrc
-cp ~/.vim          $BASH_SETUP/vim
+cp -r ~/.vim       $BASH_SETUP/vim
