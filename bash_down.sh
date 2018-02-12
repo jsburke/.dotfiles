@@ -15,7 +15,7 @@ cp bash_fn      ~/.bash_fn
 
 cp ctags        ~/.ctags
 cp vimrc        ~/.vimrc
-cp vim          ~/.vim
+cp -r vim       ~/.vim
 
 # open Pandora's box
 source ~/.bashrc
