@@ -55,4 +55,4 @@ alias bye="exit"
 # useful
 alias c="clear"
 alias recall="history | grep "
-alias path="echo $PATH"
+
