@@ -39,9 +39,6 @@ alias root="su"
 # find helpers
 alias fhere="find . -name "
 
-# file size human readable
-alias df="dh -h"
-
 # process listing
 alias ps="ps -auxf"
 alias psg="ps | grep -v grep | grep -i -e VSZ -e"
