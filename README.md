@@ -11,6 +11,7 @@ Many of the utlities I use are taken from elsewhere, and I hope to give credit w
 |[nachumk](https://github.com/nachumk)|System Verilog Vim Scripts|[systemverilog.vim](https://github.com/nachumk/systemverilog.vim)|
 |[Derek Wyatt](https://github.com/derekwyatt)|Scala for Vim|[vim-scala](https://github.com/derekwyatt/vim-scala)|
 |[Hristo Deshev](https://github.com/hdeshev)|Good Scala ctags|[ctags : gist](https://gist.github.com/hdeshev/1274261)|
+|[Mehul Tikekar](https://github.com/mtikekar)|BlueSpec Verilog Vim|[vim-bsv](https://github.com/mtikekar/vim-bsv)|
 
 If you see content in this repo that I may be using unattributed, please send me a message so that I may add it here.
  
