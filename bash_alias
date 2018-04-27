@@ -49,7 +49,9 @@ alias off="sudo poweroff"
 alias reboot="sudo reboot"
 alias bye="exit"
 
-# useful
+# quick clear
 alias c="clear"
+
+# easy history search
 alias recall="history | grep "
 
