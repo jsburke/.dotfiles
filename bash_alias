@@ -16,7 +16,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias back="cd -"
+alias back="cd - &> /dev/null"
 
 # ls aliases
 alias ll="ls -lah"
@@ -49,9 +49,7 @@ alias off="sudo poweroff"
 alias reboot="sudo reboot"
 alias bye="exit"
 
-# quick clear
+# useful
 alias c="clear"
-
-# easy history search
 alias recall="history | grep "
 
