@@ -22,3 +22,6 @@ export PS2='continue -->'
 # set up stuff for the bash_setup project
 # change this path for easy updates
 export BASH_SETUP=~/bash_setup
+
+# autocomplete for Makefile
+complete -W "\`grep -oE '^[a-zA-Z0-9_.-]+:([^=]|$)' Makefile | sed 's/[^a-zA-Z0-9_.-]*$//'\`" make
