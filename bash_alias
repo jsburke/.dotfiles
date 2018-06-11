@@ -4,6 +4,7 @@ alias bashrc="vim ~/.bashrc; refresh"
 alias bash_alias="vim ~/.bash_alias; refresh"
 alias bash_fn="vim ~/.bash_fn; refresh"
 alias bash_local="vim ~/.bash_local; refresh"
+alias vimrc="vim ~/.vimrc; refresh"
 # these ones are bash_setup project specific
 alias bashup="$BASH_SETUP/bash_up.sh"
 
