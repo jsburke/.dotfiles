@@ -33,7 +33,6 @@ alias ln="ln -i"
 
 # rm aliases, despite the internet's warnings
 alias rmswp="rm .*sw? "  # remove swap files
-alias del="rm -rfi"
 
 # root access
 alias root="su"
