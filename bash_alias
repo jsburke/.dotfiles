@@ -40,6 +40,10 @@ alias root="su"
 # find helpers
 alias fhere="find . -name "
 
+# git related
+alias gittime="git config credential.helper 'cache --timeout=3600'" # creds for an hour
+alias gitcred="git config credential.helper 'store'"
+
 # process listing
 alias ps="ps -auxf"
 alias psg="ps | grep -v grep | grep -i -e VSZ -e"
