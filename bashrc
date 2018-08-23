@@ -1,9 +1,12 @@
 # If not running interactively, don't do anything
 [[ "$-" != *i* ]] && return
 
-source ~/.bash_alias
-source ~/.bash_fn
-source ~/.bash_local
+# set up so that I can source easily from root or other users
+export BASHRC_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+source $BASHRC_HOME/.bash_alias
+source $BASHRC_HOME/.bash_fn
+source $BASHRC_HOME/.bash_local
 
 # don't duplicate things in history
 HISTCONTROL=ignoreboth
@@ -21,7 +24,7 @@ export PS2='continue -->'
 
 # set up stuff for the bash_setup project
 # change this path for easy updates
-export BASH_SETUP=~/bash_setup
+export BASH_SETUP=$BASHRC_HOME/bash_setup
 
 # autocomplete for Makefile
 complete -W "\`grep -oE '^[a-zA-Z0-9_.-]+:([^=]|$)' Makefile | sed 's/[^a-zA-Z0-9_.-]*$//'\`" make
