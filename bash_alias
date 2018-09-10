@@ -43,6 +43,7 @@ alias fhere="find . -name "
 # git related
 alias gittime="git config credential.helper 'cache --timeout=3600'" # creds for an hour
 alias gitcred="git config credential.helper 'store'"
+alias gitignore="vim .gitignore"
 
 # process listing
 alias ps="ps -auxf"
