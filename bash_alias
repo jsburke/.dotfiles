@@ -55,6 +55,9 @@ alias off="sudo poweroff"
 alias reboot="sudo reboot"
 alias bye="exit"
 
+# programming related
+alias lua="lua5.3"
+
 # useful
 alias c="clear"
 alias recall="history | grep "
