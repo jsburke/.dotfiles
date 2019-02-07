@@ -47,4 +47,3 @@ function newpass ()
 }
 
 function prm () { find "$@" -printf "%f -- %m\n"; }
-
