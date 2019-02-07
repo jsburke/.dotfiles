@@ -4,4 +4,3 @@ syntax on
 :set hlsearch
 autocmd BufNewFile,BufRead *.lds set syntax=ld
 autocmd BufNewFile,BufRead *.bsvi set syntax=bsv
-:set foldmethod=syntax
