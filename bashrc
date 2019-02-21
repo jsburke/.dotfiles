@@ -28,3 +28,7 @@ export BASH_SETUP=$BASHRC_HOME/bash_setup
 
 # autocomplete for Makefile
 complete -W "\`grep -oE '^[a-zA-Z0-9_.-]+:([^=]|$)' Makefile | sed 's/[^a-zA-Z0-9_.-]*$//'\`" make
+
+# default my text editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
