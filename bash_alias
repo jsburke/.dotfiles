@@ -20,6 +20,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
 alias back="cd - &> /dev/null"
 
 # ls aliases
