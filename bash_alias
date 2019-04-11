@@ -9,8 +9,11 @@ alias vimrc="vim ~/.vimrc; refresh"
 alias bashup="$BASH_SETUP/bash_up.sh"
 
 # colors for ls and grep
-alias ls="ls --color=auto"
-alias grep="grep --color=auto"
+alias ls="ls --color=always"
+alias grep="grep --color=always"
+
+# color preservation in less
+alias less="less -R"
 
 # aliases for cd
 alias ..="cd .."
