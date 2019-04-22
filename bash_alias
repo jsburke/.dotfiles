@@ -17,10 +17,11 @@ alias less="less -R"
 
 # aliases for cd
 alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ......="cd ../../../../.."
+alias ...="..; .."
+alias ....="...; .."
+alias .....="....; .."
+alias ......=".....; .."
+alias .......="......; .."
 alias back="cd - &> /dev/null"
 
 # ls aliases
@@ -41,9 +42,6 @@ alias rmswp="rm .*sw? "  # remove swap files
 # root access
 alias root="su"
 
-# find helpers
-alias fhere="find . -name "
-
 # git related
 alias gittime="git config credential.helper 'cache --timeout=3600'" # creds for an hour
 alias gitcred="git config credential.helper 'store'"
@@ -51,8 +49,8 @@ alias gitignore="vim .gitignore"
 alias gitnopush="git branch | grep \* | cut -d ' ' -f2 | awk '{ system(\"git log origin/\" \$1 \"..\" \$1) }'"
 
 # process listing
-alias ps="ps -auxf"
-alias psg="ps | grep -v grep | grep -i -e VSZ -e"
+alias psa="ps -auxf"
+alias psg="psa | grep -v grep | grep -i -e VSZ -e"
 alias psme="psg $USER" # userful for when you ssh to a machine with this set up
 
 # power and logot ease
