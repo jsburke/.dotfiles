@@ -25,6 +25,7 @@ alias .......="......; .."
 alias back="cd - &> /dev/null"
 
 # ls aliases
+alias sl="ls"
 alias ll="ls -lah"
 alias la="ls -a"
 alias l="ll"
