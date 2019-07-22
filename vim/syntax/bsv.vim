@@ -31,7 +31,7 @@ syntax keyword bsvBoolean True False
 
 " types
 syntax match bsvDatatype '\vTuple[2-8]'
-syntax keyword bsvDatatype Bit UInt Int int Integer Bool Real String Fmt void Maybe Ordering Clock Reset Inout Action ActionValue Rules File BuffIndex
+syntax keyword bsvDatatype Bit UInt Int int Integer Bool Real String Fmt void Maybe Ordering Clock Reset Inout Action ActionValue Rules File BuffIndex noAction
 syntax keyword bsvDatatype Vector List Valid Invalid Complex FixedPoint InvalidFile Stmt BRAMCore
 syntax keyword bsvInterface Reg FIFO FIFOF RegFile Get Put GetPut toPut toGet Server Client Empty
 
