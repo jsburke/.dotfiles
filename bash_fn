@@ -51,6 +51,6 @@ function prm () { find "$@" -printf "%f -- %m\n"; }
 function chext ()
 {
   for f in *.$1; do
-    mv -- "$f" "${f%.$1}.$2"
+    mv "$f" "${f%.$1}.$2"
   done
 }
