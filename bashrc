@@ -19,8 +19,8 @@ set -o histexpand
 shopt -s checkwinsize
 
 # set up bash prompts
-export PS1='\[\e[92m\]\u@\h:\[\e[m\]\[\e[96m\]\w\$\[\e[m\] '
-export PS2='continue -->'
+export PS1="\[\e[92m\]\u@\h:\[\e[m\]\[\e[96m\]\w\[\e[m\]\[\e[93m\]\$(__git_ps1 '(%s)')\[\e[m\]\[\e[97m\]\$ \[\e[m\]"
+export PS2='>>'
 
 # set up stuff for the bash_setup project
 # change this path for easy updates
