@@ -19,7 +19,11 @@ set -o histexpand
 shopt -s checkwinsize
 
 # set up bash prompts
-export PS1="\[\e[92m\]\u@\h:\[\e[m\]\[\e[96m\]\w\[\e[m\]\[\e[93m\]\$(__git_ps1 '(%s)')\[\e[m\]\[\e[97m\]\$ \[\e[m\]"
+parse_git_branch() {
+  git branch 2>/dev/null | grep \* | cut -d ' ' -f2,3 | sed -e 's/(//g' -e 's/)//g' 
+}
+
+export PS1="\[\e[92m\]\u@\h:\[\e[m\]\[\e[96m\]\w \[\e[m\]\[\e[93m\]\$(parse_git_branch)\[\e[m\]\[\e[97m\]\$ \[\e[m\]"
 export PS2='>>'
 
 # set up stuff for the bash_setup project
