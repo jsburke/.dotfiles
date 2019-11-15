@@ -1,5 +1,4 @@
-# bash_setup
-
+# dotfiles
 This repo is to make sure all my bash settings remain relatively the same across all devices.  I will continue to bulk it out as time passes, and I find more things I need or more errors I make.  This is more a project for convenience than it is trying to explore a research interest or do something fun in software or hardware.  I have also evolved this to include my vim and ctags preferences.
 
 ## Credits
@@ -12,6 +11,7 @@ Many of the utlities I use are taken from elsewhere, and I hope to give credit w
 |[Derek Wyatt](https://github.com/derekwyatt)|Scala for Vim|[vim-scala](https://github.com/derekwyatt/vim-scala)|
 |[Hristo Deshev](https://github.com/hdeshev)|Good Scala ctags|[ctags : gist](https://gist.github.com/hdeshev/1274261)|
 |[Mehul Tikekar](https://github.com/mtikekar)|BlueSpec Verilog Vim|[vim-bsv](https://github.com/mtikekar/vim-bsv)|
+|[kusalananda](https://unix.stackexchange.com/users/116858/kusalananda)|Initial Colon Append|[stack overflow](https://unix.stackexchange.com/a/457753)|
 
 If you see content in this repo that I may be using unattributed, please send me a message so that I may add it here.
  
@@ -20,16 +20,16 @@ If you see content in this repo that I may be using unattributed, please send me
 Setting up the repo and using it for the first time is easy, just type the following commands:
 
 ```sh
-git clone https://github.com/jsburke/bash_setup.git
-cd  bash_setup
-./bash_down.sh
+git clone https://github.com/jsburke/.dotfiles.git
+cd  .dotfiles
+./push_to_local.sh
 ```
 
-And all the settings are good to go!  From that point on updates are easy.  If you update your own `.bashrc`, `.bash_alias`, `.bash_fn`, `.vimrc`, or the files in `.vim`, you can update this repo by invoking `bashup`. There is also a `bash_down.sh` script provided, as seen above.  It can be used after a `git pull` to localize changes, but must be invoked from the repo's local directory. This work does assume that you clone the repo to your `home` directory, since it will set up `$BASH_SETUP` to ~/bash_setup; if you want it elsewhere you will have to change the last line in the bashrc file which sets that variable.
+And all the settings are good to go!  From that point on updates are easy.  If you update your own `.bashrc`, `.alias`, `.functions`, `.vimrc`, or the files in `.vim`, you can update this repo by invoking `push_to_git.sh`. There is also a `push_to_local.sh` script provided, as seen above.  It can be used after a `git pull` to localize changes, but must be invoked from the repo's local directory. This work does assume that you clone the repo to your `$HOME` directory; if you want it elsewhere you will have to fix some things.
 
-## Notes on `bash_local`
+## Notes on `.me`
 
-A final file is sourced in the bash_rc here that does not exist in this repo: `bash_local`.  Since every machine one may use may have unique utilities that get used, for example special ssh targets or utilities dedicated to expensive hardware like GPUs or FPGAs, a file meant to be unique to a given machine is sourced in `.bash_rc` called `.bash_local`.  Those specific use cases should be set up in this file.  If there really aren't unique use cases, `.bash_local` can be deleted and its use commented out of the profile and scripts.
+A final file is sourced in the bashrc here that does not exist in this repo: `.me`.  Since every machine one may use may have unique utilities that get used, for example special ssh targets or utilities dedicated to expensive hardware like GPUs or FPGAs, a file meant to be unique to a given machine is sourced in `.bashrc` called `.me`.  Those specific use cases should be set up in this file.  If there really aren't unique use cases, `.me` can be deleted and its use commented out of the profile and scripts.
 
 ## Copying, Forking, et cetera
 
