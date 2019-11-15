@@ -1,18 +1,25 @@
 #!/bin/bash
 
-rm -f  $BASH_SETUP/bashrc
-rm -f  $BASH_SETUP/bash_alias
-rm -f  $BASH_SETUP/bash_fn
+# quick script to update local changes to git repo
 
-rm -f  $BASH_SETUP/ctags
-rm -f  $BASH_SETUP/vimrc
-rm -rf $BASH_SETUP/vim
+# disable history
+set +o history
+
+HERE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+rm -f  $HERE/bashrc
+rm -f  $HERE/.alias
+rm -f  $HERE/.functions
+
+rm -f  $HERE/.ctags
+rm -f  $HERE/.vimrc
+rm -rf $HERE/.vim
+
 # not deleting bash_local since it will vary by machine
+cp ~/.bashrc    $HERE/bashrc
+cp ~/.alias     $HERE/.alias
+cp ~/.functions $HERE/.functions
 
-cp ~/.bashrc       $BASH_SETUP/bashrc
-cp ~/.bash_alias   $BASH_SETUP/bash_alias
-cp ~/.bash_fn      $BASH_SETUP/bash_fn
-
-cp ~/.ctags        $BASH_SETUP/ctags
-cp ~/.vimrc        $BASH_SETUP/vimrc
-cp -r ~/.vim       $BASH_SETUP/vim
+cp ~/.ctags     $HERE/.ctags
+cp ~/.vimrc     $HERE/.vimrc
+cp -r ~/.vim    $HERE/.vim
