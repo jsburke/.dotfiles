@@ -35,6 +35,13 @@ function extract
 fi
 }
 
+function colonapp ()
+{
+  var="$1"
+  shift
+  export ${var}="${!var:+${!var}:}$(IFS=:; echo "${*}")" 
+}
+
 function mcd () 
 {
   mkdir -p $1
