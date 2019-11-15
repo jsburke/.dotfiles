@@ -4,12 +4,31 @@
 # disable history
 set +o history
 
+# I'd normally include these functions in .functions
+# but they are very useful here
+
+  # append to a colon separated list like PATH
+
+function colonapp ()
+{
+  var="$1"
+  shift
+  export ${var}="${!var:+${!var}:}$(IFS=:; echo "${*}")" 
+}
+
+  # source a file if it exists
+
+function include ()
+{
+  [[ -f "$1" ]] && source "$1"
+}
+
 # set up so that I can source easily from root or other users
 export BASHRC_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-source $BASHRC_HOME/.bash_alias
-source $BASHRC_HOME/.bash_fn
-source $BASHRC_HOME/.bash_local
+include ~/.alias
+include ~/.functions
+include ~/.me
 
 # don't duplicate things in history
 HISTCONTROL=ignoreboth
@@ -24,10 +43,6 @@ parse_git_branch() {
 
 export PS1="\[\e[92m\]\u@\h:\[\e[m\]\[\e[96m\]\w \[\e[m\]\[\e[93m\]\$(parse_git_branch)\[\e[m\]\[\e[97m\]\$ \[\e[m\]"
 export PS2='>>'
-
-# set up stuff for the bash_setup project
-# change this path for easy updates
-export BASH_SETUP=$BASHRC_HOME/bash_setup
 
 # default my text editor
 export EDITOR=vim
