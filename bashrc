@@ -1,6 +1,9 @@
 # If not running interactively, don't do anything
 [[ "$-" != *i* ]] && return
 
+# disable history
+set +o history
+
 # set up so that I can source easily from root or other users
 export BASHRC_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -10,10 +13,6 @@ source $BASHRC_HOME/.bash_local
 
 # don't duplicate things in history
 HISTCONTROL=ignoreboth
-
-# append history
-set -o history
-set -o histexpand
 
 # update window params after commands, resize text
 shopt -s checkwinsize
@@ -30,9 +29,9 @@ export PS2='>>'
 # change this path for easy updates
 export BASH_SETUP=$BASHRC_HOME/bash_setup
 
-# autocomplete for Makefile
-complete -W "\`grep -oE '^[a-zA-Z0-9_.-]+:([^=]|$)' Makefile | sed 's/[^a-zA-Z0-9_.-]*$//'\`" make
-
 # default my text editor
-export VISUAL=vim
-export EDITOR="$VISUAL"
+export EDITOR=vim
+
+# append history
+set -o history
+set -o histexpand
