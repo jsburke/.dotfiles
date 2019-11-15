@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # set up basic aliases for ease of use
 alias refresh="source ~/.bashrc"
 alias bashrc="vim ~/.bashrc; refresh"
