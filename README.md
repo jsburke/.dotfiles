@@ -12,6 +12,7 @@ Many of the utlities I use are taken from elsewhere, and I hope to give credit w
 |[Hristo Deshev](https://github.com/hdeshev)|Good Scala ctags|[ctags : gist](https://gist.github.com/hdeshev/1274261)|
 |[Mehul Tikekar](https://github.com/mtikekar)|BlueSpec Verilog Vim|[vim-bsv](https://github.com/mtikekar/vim-bsv)|
 |[kusalananda](https://unix.stackexchange.com/users/116858/kusalananda)|Initial Colon Append|[stack overflow](https://unix.stackexchange.com/a/457753)|
+|[Max Bane](https://github.com/maxbane)|NES Assembly Vim|[vim-asm_ca65](https://github.com/maxbane/vim-asm_ca65)|
 
 If you see content in this repo that I may be using unattributed, please send me a message so that I may add it here.
  
