@@ -7,7 +7,7 @@ set +o history
 
 HERE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-rm -f  $HERE/bashrc
+rm -f  $HERE/.bashrc
 rm -f  $HERE/.alias
 rm -f  $HERE/.functions
 
@@ -16,7 +16,7 @@ rm -f  $HERE/.vimrc
 rm -rf $HERE/.vim
 
 # not deleting bash_local since it will vary by machine
-cp ~/.bashrc    $HERE/bashrc
+cp ~/.bashrc    $HERE/.bashrc
 cp ~/.alias     $HERE/.alias
 cp ~/.functions $HERE/.functions
 
