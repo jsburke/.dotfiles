@@ -23,10 +23,10 @@ Setting up the repo and using it for the first time is easy, just type the follo
 ```sh
 git clone https://github.com/jsburke/.dotfiles.git
 cd  .dotfiles
-./push_to_local.sh
+./localize.sh
 ```
 
-And all the settings are good to go!  From that point on updates are easy.  If you update your own `.bashrc`, `.alias`, `.functions`, `.vimrc`, or the files in `.vim`, you can update this repo by invoking `push_to_git.sh`. There is also a `push_to_local.sh` script provided, as seen above.  It can be used after a `git pull` to localize changes, but must be invoked from the repo's local directory. This work does assume that you clone the repo to your `$HOME` directory; if you want it elsewhere you will have to fix some things.
+And all the settings are good to go!  From that point on updates are easy.  If you update your own `.bashrc`, `.alias`, `.functions`, `.vimrc`, or the files in `.vim`, you can update this repo by invoking `globalize.sh`. There is also a `localize.sh` script provided, as seen above.  It can be used after a `git pull` to localize changes, but must be invoked from the repo's local directory. This work does assume that you clone the repo to your `$HOME` directory; if you want it elsewhere you will have to fix some things.
 
 ## Notes on `.me`
 
