@@ -63,3 +63,4 @@ alias lua="lua5.3"
 alias c="clear"
 alias recall="history | grep "
 alias onpath="echo $PATH | grep "
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
