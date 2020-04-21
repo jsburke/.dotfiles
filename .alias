@@ -51,6 +51,9 @@ alias psa="ps -auxf"
 alias psg="psa | grep -v grep | grep -i -e VSZ -e"
 alias psme="psg $USER" # userful for when you ssh to a machine with this set up
 
+# vim related
+alias vim0="vim -u NONE "
+
 # power and logot ease
 alias off="sudo poweroff"
 alias reboot="sudo reboot"
