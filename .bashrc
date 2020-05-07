@@ -31,7 +31,9 @@ include $BASHRC_HOME/.functions
 include $BASHRC_HOME/.me
 
 # don't duplicate things in history
+# don't add certain things too
 HISTCONTROL=ignoreboth
+HISTIGNORE='ls *:ll *:vim *:bye:which *:set -o histexpand:tmux *:c:who:recall *'
 
 # update window params after commands, resize text
 shopt -s checkwinsize
