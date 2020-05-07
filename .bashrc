@@ -26,9 +26,9 @@ function include ()
 # set up so that I can source easily from root or other users
 export BASHRC_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-include ~/.alias
-include ~/.functions
-include ~/.me
+include $(BASHRC_HOME)/.alias
+include $(BASHRC_HOME)/.functions
+include $(BASHRC_HOME)/.me
 
 # don't duplicate things in history
 HISTCONTROL=ignoreboth
