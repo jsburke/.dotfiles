@@ -8,3 +8,4 @@ autocmd BufNewFile,BufRead *.bsvi set syntax=bsv
 autocmd BufNewFile,BufRead *.s65 set syntax=ca65
 autocmd BufNewFile,BufRead *.inc set syntax=ca65
 autocmd BufNewFile,BufRead *.rs set syntax=rust
+autocmd BufNewFile,BufRead *.dpl set syntax=dpl
