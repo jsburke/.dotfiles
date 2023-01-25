@@ -31,8 +31,8 @@ syntax keyword dplRVFields RS1 RS2 RD MEM CSR
 syntax keyword dplFailure fail
 
 " Elements of a dpl file
-syntax keyword dplSections module import metadata policy require group
-syntax keyword dplGroup grp
+syntax keyword dplSections module import metadata policy require group type
+syntax keyword dplGroup grp data global
 
 " groups common to RISC V policies
 syntax keyword dplRVGroups branchGrp retGrp jumpRegGrp jumpGrp callGrp
@@ -40,6 +40,8 @@ syntax keyword dplRVGroups pcGrp addiGrp loadUpperGrp moveGrp xoriGrp
 syntax keyword dplRVGroups andiGrp immArithGrp xorGrp arithGrp loadGrp
 syntax keyword dplRVGroups storeGrp mulDivRemGrp csrGrp csriGrp mretGrp
 syntax keyword dplRVGroups privGrp systemGrp floatGrp atomicGrp allGrp
+syntax keyword dplRVGroups controlFlowGrp notMemGrp loadMemGrp storeMemGrp
+syntax keyword dplRVGroups composeGrp mvGrp
 
 highlight Metadata   ctermfg=LightGreen
 highlight Failure    ctermfg=Red
